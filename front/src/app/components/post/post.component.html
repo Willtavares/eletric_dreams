@@ -1,0 +1,16 @@
+<h2>Posts</h2>
+
+<table>
+  <thead>
+      <th>Título</th>
+      <th>Texto</th>
+      <th>Url</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let post of postList">
+          <td>{{post.title}}</td>
+          <td>{{post.text}}</td>
+          <td>{{post.url}}</td>
+      </tr>
+  </tbody>
+</table>

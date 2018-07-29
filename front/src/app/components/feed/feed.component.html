@@ -1,0 +1,16 @@
+<h2>Feeds</h2>
+
+<table>
+  <thead>
+      <th>Nome</th>
+      <th>Url</th>
+      <th></th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let feed of feedList">
+          <td>{{feed.name}}</td>
+          <td>{{feed.url}}</td>
+          <td (click)="goToPostsPage(feed)" class="link">Visualizar posts</td>
+      </tr>
+  </tbody>
+</table>
