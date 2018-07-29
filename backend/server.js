@@ -29,7 +29,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
-mongoose.connect(dbConfig.url)
+mongoose.connect(dbConfig.url, { useNewUrlParser: true })
 .then(() => {
     console.log("Sucesso ao se conectar ao MongoDB.");    
 }).catch(err => {

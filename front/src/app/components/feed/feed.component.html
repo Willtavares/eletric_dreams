@@ -1,7 +1,8 @@
-<h2>Feeds</h2>
+<div class="container-fluid">
+<h2 style="text-align: center">Feeds</h2>
 
-<table>
-  <thead>
+<table class="table table-bordered">
+  <thead class="thead-dark">
       <th>Nome</th>
       <th>Url</th>
       <th></th>
@@ -10,7 +11,8 @@
       <tr *ngFor="let feed of feedList">
           <td>{{feed.name}}</td>
           <td>{{feed.url}}</td>
-          <td (click)="goToPostsPage(feed)" class="link">Visualizar posts</td>
+          <td (click)="goToPostsPage(feed)" class="btn btn-outline-secondary btn-lg btn-block">Visualizar Posts</td>
       </tr>
   </tbody>
 </table>
+</div>
